@@ -263,7 +263,6 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         "orderId": "642017062200254306",
         "merOrderId": "1498125477091",
         "amount": "1",
-        "txnType": "撤销",
         "currencyCode": "156",
         "operator": "000001",
         "cardType": "1",
@@ -306,7 +305,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>business_id</td>
         <td>-</td>
         <td>接口标识</td>
-        <td>固定ums.trade.pay.cancel.3swpkouq</td>
+        <td>消费撤销交易<br>固定ums.trade.pay.cancel.3swpkouq</td>
     </tr>
     <tr>
         <th rowspan="1">02</th>
@@ -402,173 +401,166 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     <tr>
         <th rowspan="1">15</th>
         <td>-</td>
-        <td>txnType</td>
-        <td>交易类别</td>
-        <td>撤销</td>
-    </tr>
-    <tr>
-        <th rowspan="1">16</th>
-        <td>-</td>
         <td>currencyCode</td>
         <td>交易货币代码</td>
         <td>按照<a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217规范</a>返回<br>人民币：156</td>
     </tr>
     <tr>
-        <th rowspan="1">17</th>
+        <th rowspan="1">16</th>
         <td>-</td>
         <td>operator</td>
         <td>操作员号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">18</th>
+        <th rowspan="1">17</th>
         <td>-</td>
         <td>cardType</td>
         <td>卡类型</td>
         <td>借记卡：0<br>贷记卡：1</td>
     </tr>
     <tr>
-        <th rowspan="1">19</th>
+        <th rowspan="1">18</th>
         <td>-</td>
         <td>orgId</td>
         <td>分支机构</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">20</th>
+        <th rowspan="1">19</th>
         <td>-</td>
         <td>authNo</td>
         <td>授权码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">21</th>
+        <th rowspan="1">20</th>
         <td>-</td>
         <td>acqNo</td>
         <td>收单机构号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">22</th>
+        <th rowspan="1">21</th>
         <td>-</td>
         <td>issNo</td>
         <td>发卡机构号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">23</th>
+        <th rowspan="1">22</th>
         <td>-</td>
         <td>pAccount</td>
         <td>卡号（前六后四）</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">24</th>
+        <th rowspan="1">23</th>
         <td>-</td>
         <td>cardOrgCode</td>
         <td>卡组织机构代码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">25</th>
+        <th rowspan="1">24</th>
         <td>-</td>
         <td>issBankName</td>
         <td>发卡行名称</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">26</th>
+        <th rowspan="1">25</th>
         <td>-</td>
         <td>processCode</td>
         <td>交易处理码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">27</th>
+        <th rowspan="1">26</th>
         <td>-</td>
         <td>voucherNo</td>
         <td>受卡方系统跟踪号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">28</th>
+        <th rowspan="1">27</th>
         <td>-</td>
         <td>voucherDate</td>
         <td>受卡方所在地日期</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">29</th>
+        <th rowspan="1">28</th>
         <td>-</td>
         <td>voucherTime</td>
         <td>受卡方所在地时间</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">30</th>
+        <th rowspan="1">29</th>
         <td>-</td>
         <td>liqDate</td>
         <td>清算日期</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">31</th>
+        <th rowspan="1">30</th>
         <td>-</td>
         <td>serviceCode</td>
         <td>服务点条件码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">32</th>
+        <th rowspan="1">31</th>
         <td>-</td>
         <td>refId</td>
         <td>检索参考号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">33</th>
+        <th rowspan="1">32</th>
         <td>-</td>
         <td>merchantId</td>
         <td>受卡方标识码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">34</th>
+        <th rowspan="1">33</th>
         <td>-</td>
         <td>termId</td>
         <td>受卡机终端标识码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">35</th>
+        <th rowspan="1">34</th>
         <td>-</td>
         <td>batchNo</td>
         <td>批次号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">36</th>
+        <th rowspan="1">35</th>
         <td>-</td>
         <td>dealDate</td>
         <td>交易时间</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">37</th>
+        <th rowspan="1">36</th>
         <td>-</td>
         <td>phoneNumber</td>
         <td>消费者手机号</td>
         <td>若有，则是带星号的手机号</td>
     </tr>
     <tr>
-        <th rowspan="1">38</th>
+        <th rowspan="1">37</th>
         <td>extra</td>
         <td>-</td>
         <td>扩展返回参数的key</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">39</th>
+        <th rowspan="1">38</th>
         <td>-</td>
         <td>paySerialNum</td>
         <td>仅POS通交易有</td>

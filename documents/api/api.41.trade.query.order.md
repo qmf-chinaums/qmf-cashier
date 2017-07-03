@@ -173,7 +173,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         "orderId": "642017062300254415",
         "merOrderId": "1498187528239",
         "amount": "1",
-        "txnType": "SALE",
+        "transType": "SALE",
         "currencyCode": "156",
         "operator": "000001",
         "cardType": "1",
@@ -314,9 +314,9 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     <tr>
         <th rowspan="1">15</th>
         <td>-</td>
-        <td>txnType</td>
+        <td>transType</td>
         <td>交易类别</td>
-        <td>SALE：消费，<br>REVERSE：冲正，<br>CANCEL：撤销，<br>RETURN：退款，<br>REFUND：退货，<br>PREAUTH：预授权，<br>PREAUTH_CANCELED：预授权撤销，<br>PREAUTH_COMPLETE：预授权完成，<br>PREAUTH_COMPLETE_CANCELED：预授权完成撤销</td>
+        <td>-</td>
     </tr>
     <tr>
         <th rowspan="1">16</th>
