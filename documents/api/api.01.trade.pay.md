@@ -607,7 +607,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>voucherNo</td>
         <td>受卡方系统跟踪号</td>
-        <td>-</td>
+        <td>钱包类扫码交易时，作为消费撤销凭证号</td>
     </tr>
     <tr>
         <th rowspan="1">27</th>

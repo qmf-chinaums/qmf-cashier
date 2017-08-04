@@ -152,10 +152,10 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     <tr>
         <td>-</td>
         <td>merOrderId</td>
-        <td>▲</td>
+        <td>●</td>
         <td>长度>=11位</td>
         <td>-</td>
-        <td>原交易的商户订单号<br>originOrderId与merOrderId只需要传一个，<br>若传入了originOrderId则优先使用originOrderId</td>
+        <td>联机退货下单用的商户订单号</td>
     </tr>
     <tr>
         <th rowspan="2">06</th>
@@ -176,10 +176,10 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     <tr>
         <td>-</td>
         <td>originOrderId</td>
-        <td>▲</td>
+        <td>●</td>
         <td>长度为18位</td>
         <td>-</td>
-        <td>原交易的银商订单号<br>originOrderId与merOrderId只需要传一个，<br>若传入了originOrderId则优先使用originOrderId</td>
+        <td>原交易的银商订单号</td>
     </tr>
     <tr>
         <th rowspan="2">08</th>

@@ -148,7 +148,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>originOrderId与originMerOrderId只需要传一个，<br>若传入了originOrderId则优先使用originOrderId</td>
     </tr>
     <tr>
-        <th rowspan="2">13</th>
+        <th rowspan="2">07</th>
         <th align="left" colspan="6">原预授权返回的授权码</th>
     </tr>
     <tr>
@@ -160,7 +160,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>原预授权返回的授权码</td>
     </tr>
     <tr>
-        <th rowspan="2">07</th>
+        <th rowspan="2">08</th>
         <th align="left" colspan="6">是否使用银行卡交易</th>
     </tr>
     <tr>
@@ -172,7 +172,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>是否使用银行卡交易<br>◆"true": 必须使用银行卡<br>◆"false"：不需要使用银行卡</td>
     </tr>
     <tr>
-        <th rowspan="2">10</th>
+        <th rowspan="2">09</th>
         <th align="left" colspan="6">操作员号</th>
     </tr>
     <tr>
@@ -184,7 +184,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>操作员号<br></td>
     </tr>
     <tr>
-        <th rowspan="2">14</th>
+        <th rowspan="2">10</th>
         <th align="left" colspan="6">备注</th>
     </tr>
     <tr>
@@ -196,7 +196,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>指定格式的备注字段<br>详细请参考《<a href="../comment/comment.memo.doc.md">备注字段说明</a>》章节</td>
     </tr>
     <tr>
-        <th rowspan="2">15</th>
+        <th rowspan="2">11</th>
         <th align="left" colspan="6">扩展请求参数</th>
     </tr>
     <tr>
@@ -208,7 +208,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>扩展字段的key。内容需要定制化开发。</td>
     </tr>
     <tr>
-        <th rowspan="2">16</th>
+        <th rowspan="2">12</th>
         <th align="left" colspan="6">加签后的签名内容</th>
     </tr>
     <tr>
