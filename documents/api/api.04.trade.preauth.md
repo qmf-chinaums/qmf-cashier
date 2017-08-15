@@ -193,7 +193,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>consumerEmail</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度<=128位</td>
         <td>-</td>
         <td>消费者邮箱<br>若有，则电子签购单优先<br>使用邮箱发送而非手机号</td>
     </tr>
