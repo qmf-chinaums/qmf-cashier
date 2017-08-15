@@ -78,6 +78,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         "amount": "1",
         "operator": "000001",
         "consumerPhone": "12345678901",
+        "consumerEmail": "",
         "payType": "BANKCARD",
         "serialNum": "",
         "orgCode": "",
@@ -217,6 +218,18 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     </tr>
     <tr>
         <th rowspan="2">10</th>
+        <th align="left" colspan="6">消费者邮箱</th>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>consumerEmail</td>
+        <td>○</td>
+        <td>-</td>
+        <td>-</td>
+        <td>消费者邮箱<br>若有，则电子签购单优先<br>使用邮箱发送而非手机号</td>
+    </tr>
+    <tr>
+        <th rowspan="2">11</th>
         <th align="left" colspan="6">消费介质区分</th>
     </tr>
     <tr>
@@ -228,7 +241,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>◆BANKCARD：银行卡、云闪付消费<br>◆PREPAIDCARD：预付卡消费<br>◆POSMPAY：POS通扫码消费（商户扫个人）</td>
     </tr>
     <tr>
-        <th rowspan="2">11</th>
+        <th rowspan="2">12</th>
         <th align="left" colspan="6">POS通支付串码</th>
     </tr>
     <tr>
@@ -240,7 +253,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>当payType="POSMPAY"，即POS扫码消费时<br>◆若调用方自行获取到了个人支付串码（扫码枪、自行实现的摄像头扫码等），可以选择通过本字段传入支付串码。<br>◆若不传，则本插件内部会调起摄像头进行扫码。</td>
     </tr>
     <tr>
-        <th rowspan="2">12</th>
+        <th rowspan="2">13</th>
         <th align="left" colspan="6">预付卡组织机构代码</th>
     </tr>
     <tr>
@@ -252,7 +265,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>当payType="PREPAIDCARD"，即预付卡消费时，必传。</td>
     </tr>
     <tr>
-        <th rowspan="2">13</th>
+        <th rowspan="2">14</th>
         <th align="left" colspan="6">优惠类型</th>
     </tr>
     <tr>
@@ -264,7 +277,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>当调用方配有优惠活动时<br>◆"0"：无优惠<br>◆"1": 银行卡优惠<br>◆"2": 优惠券优惠</td>
     </tr>
     <tr>
-        <th rowspan="2">14</th>
+        <th rowspan="2">15</th>
         <th align="left" colspan="6">优惠券券码</th>
     </tr>
     <tr>
@@ -276,7 +289,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>当couponType="2"，即享用优惠券优惠时，必传</td>
     </tr>
     <tr>
-        <th rowspan="2">15</th>
+        <th rowspan="2">16</th>
         <th align="left" colspan="6">是否展示订单确认页面</th>
     </tr>
     <tr>
@@ -288,7 +301,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>是否展示订单确认页面。<br>◆"true"：展示<br>◆"false": 不展示</td>
     </tr>
     <tr>
-        <th rowspan="2">16</th>
+        <th rowspan="2">17</th>
         <th align="left" colspan="6">是否展示电子签购单页面</th>
     </tr>
     <tr>
@@ -300,7 +313,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>是否展示电子签购单页面。<br>◆"true"：展示<br>◆"false": 不展示</td>
     </tr>
     <tr>
-        <th rowspan="2">17</th>
+        <th rowspan="2">18</th>
         <th align="left" colspan="6">签购单处理方式</th>
     </tr>
     <tr>
@@ -312,7 +325,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>签购单处理方式<br>◆paperType：自动打印纸质签购单<br>◆electricType：自动发送短信签购单（需求填写消费者手机号）<br>◆defaultType：默认方式，即需要手动选择签购单出来方式</td>
     </tr>
     <tr>
-        <th rowspan="2">18</th>
+        <th rowspan="2">19</th>
         <th align="left" colspan="6">支付卡类型限制</th>
     </tr>
     <tr>
@@ -324,7 +337,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>支付卡类型限制<br>◆"0"：借记卡，贷记卡都支持<br>◆"1"：不支持借记卡</td>
     </tr>
     <tr>
-        <th rowspan="2">19</th>
+        <th rowspan="2">20</th>
         <th align="left" colspan="6">备注</th>
     </tr>
     <tr>
@@ -336,7 +349,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>指定格式的备注字段<br>详细请参考《<a href="../comment/comment.memo.doc.md">备注字段说明</a>》章节</td>
     </tr>
     <tr>
-        <th rowspan="2">20</th>
+        <th rowspan="2">21</th>
         <th align="left" colspan="6">扩展请求参数</th>
     </tr>
     <tr>
@@ -348,7 +361,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>扩展字段的key。内容需要定制化开发。</td>
     </tr>
     <tr>
-        <th rowspan="2">21</th>
+        <th rowspan="2">22</th>
         <th align="left" colspan="6">扩展字段</th>
     </tr>
     <tr>
@@ -360,7 +373,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>需要定制</td>
     </tr>
     <tr>
-        <th rowspan="2">22</th>
+        <th rowspan="2">23</th>
         <th align="left" colspan="6">加签后的签名内容</th>
     </tr>
     <tr>

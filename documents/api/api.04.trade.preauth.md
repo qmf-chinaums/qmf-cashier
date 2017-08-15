@@ -56,6 +56,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         "amount": "1",
         "isSupportDebitCard": "1",
         "consumerPhone": "12345678901",
+        "consumerEmail": "",
         "memo": "指定格式的备注字段"
     },
     "extend_params": {
@@ -186,6 +187,18 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     </tr>
     <tr>
         <th rowspan="2">10</th>
+        <th align="left" colspan="6">消费者邮箱</th>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td>consumerEmail</td>
+        <td>○</td>
+        <td>-</td>
+        <td>-</td>
+        <td>消费者邮箱<br>若有，则电子签购单优先<br>使用邮箱发送而非手机号</td>
+    </tr>
+    <tr>
+        <th rowspan="2">11</th>
         <th align="left" colspan="6">操作员号</th>
     </tr>
     <tr>
@@ -197,7 +210,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>操作员号<br></td>
     </tr>
     <tr>
-        <th rowspan="2">11</th>
+        <th rowspan="2">12</th>
         <th align="left" colspan="6">备注</th>
     </tr>
     <tr>
@@ -209,7 +222,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>指定格式的备注字段<br>◆详细请参考《<a href="../comment/comment.memo.doc.md">备注字段说明</a>》章节</td>
     </tr>
     <tr>
-        <th rowspan="2">12</th>
+        <th rowspan="2">13</th>
         <th align="left" colspan="6">扩展请求参数</th>
     </tr>
     <tr>
@@ -221,7 +234,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>扩展字段的key。内容需要定制化开发。</td>
     </tr>
     <tr>
-        <th rowspan="2">15</th>
+        <th rowspan="2">14</th>
         <th align="left" colspan="6">加签后的签名内容</th>
     </tr>
     <tr>
