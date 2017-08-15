@@ -154,7 +154,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>merOrderId</td>
         <td>●</td>
-        <td>长度>=11位</td>
+        <td>长度>=11位且<=64位</td>
         <td>-</td>
         <td>联机退货下单用的商户订单号</td>
     </tr>

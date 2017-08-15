@@ -131,7 +131,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>originMerOrderId</td>
         <td>▲</td>
-        <td>长度>=11位</td>
+        <td>长度>=11位且<=64位</td>
         <td>-</td>
         <td>originOrderId与originMerOrderId只需要传一个，<br>若传入了originOrderId则优先使用originOrderId</td>
     </tr>

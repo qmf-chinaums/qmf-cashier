@@ -132,7 +132,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>merOrderId</td>
         <td>▲</td>
-        <td>长度>=11位</td>
+        <td>长度>=11位且<=64位</td>
         <td>-</td>
         <td>原交易的商户订单号<br>orderId与merOrderId只需要传一个，<br>若传入了orderId则优先使用orderId</td>
     </tr>

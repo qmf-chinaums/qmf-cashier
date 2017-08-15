@@ -164,7 +164,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>merOrderId</td>
         <td>●</td>
-        <td>长度>=11位</td>
+        <td>长度>=11位且<=64位</td>
         <td>-</td>
         <td>调用方自行生成并维护的订单号</td>
     </tr>
