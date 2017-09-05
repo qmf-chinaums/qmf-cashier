@@ -66,7 +66,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <th>参数二层</th>
         <th>必填</th>
         <th>取值范围</th>
-        <th>参默认值</th>
+        <th>默认值</th>
         <th>说明</th>
     </tr>
     <tr>

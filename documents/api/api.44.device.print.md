@@ -68,7 +68,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <th>参数二层</th>
         <th>必填</th>
         <th>取值范围</th>
-        <th>参默认值</th>
+        <th>默认值</th>
         <th>说明</th>
     </tr>
     <tr>
@@ -127,7 +127,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>message</td>
         <td>●</td>
-        <td>长度为8位</td>
+        <td>-</td>
         <td>-</td>
         <td>打印规范参见<br>《<a href="../attachment/银商移动刷卡终端打印规范_20140604_V1.2.pdf">银商移动刷卡终端打印规范</a>》</td>
     </tr>

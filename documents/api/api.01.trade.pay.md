@@ -105,7 +105,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <th>参数二层</th>
         <th>必填</th>
         <th>取值范围</th>
-        <th>参默认值</th>
+        <th>默认值</th>
         <th>说明</th>
     </tr>
     <tr>
@@ -480,7 +480,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>sub_msg</td>
         <td>-</td>
         <td>次错误信息</td>
-        <td>详细请参考《<a href="../comment/comment/comment.error.code.doc.md">错误码说明</a>》章节</td>
+        <td>详细请参考《<a href="../comment/comment.error.code.doc.md">错误码说明</a>》章节</td>
     </tr>
     <tr>
         <th rowspan="1">07</th>
