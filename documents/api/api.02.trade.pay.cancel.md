@@ -144,7 +144,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>merOrderDesc</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于256位</td>
         <td>-</td>
         <td>订单信息描述</td>
     </tr>
@@ -180,7 +180,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>operator</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于12位</td>
         <td>-</td>
         <td>原交易的操作员号<br></td>
     </tr>
@@ -216,7 +216,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>memo</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于256位</td>
         <td>-</td>
         <td>指定格式的备注字段<br>◆详细请参考《<a href="../comment/comment.memo.doc.md">备注字段说明</a>》章节</td>
     </tr>

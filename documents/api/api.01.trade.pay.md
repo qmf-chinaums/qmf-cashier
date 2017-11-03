@@ -176,7 +176,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>merOrderDesc</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于256位</td>
         <td>-</td>
         <td>订单信息描述</td>
     </tr>
@@ -200,7 +200,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>operator</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于12位</td>
         <td>-</td>
         <td>可用于类似店员字段</td>
     </tr>
@@ -248,7 +248,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>serialNum</td>
         <td>▲</td>
-        <td>-</td>
+        <td>长度小于等于100位</td>
         <td>-</td>
         <td>当payType="POSMPAY"，即POS扫码消费时<br>◆若调用方自行获取到了个人支付串码（扫码枪、自行实现的摄像头扫码等），可以选择通过本字段传入支付串码。<br>◆若不传，则本插件内部会调起摄像头进行扫码。</td>
     </tr>
@@ -284,7 +284,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>couponNo</td>
         <td>▲</td>
-        <td>-</td>
+        <td>长度小于等于40位</td>
         <td>-</td>
         <td>当couponType="2"，即享用优惠券优惠时，必传</td>
     </tr>
@@ -344,7 +344,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>memo</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于256位</td>
         <td>-</td>
         <td>指定格式的备注字段<br>详细请参考《<a href="../comment/comment.memo.doc.md">备注字段说明</a>》章节</td>
     </tr>

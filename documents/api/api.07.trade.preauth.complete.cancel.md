@@ -155,7 +155,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>originAuthNo</td>
         <td>●</td>
-        <td>-</td>
+        <td>长度小于等于200位</td>
         <td>-</td>
         <td>原预授权完成返回的授权码</td>
     </tr>
@@ -179,7 +179,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>operator</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于12位</td>
         <td>-</td>
         <td>操作员号<br></td>
     </tr>
@@ -191,7 +191,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>memo</td>
         <td>○</td>
-        <td>-</td>
+        <td>长度小于等于256位</td>
         <td>-</td>
         <td>指定格式的备注字段<br>◆详细请参考《<a href="../comment/comment.memo.doc.md">备注字段说明</a>》章节</td>
     </tr>
