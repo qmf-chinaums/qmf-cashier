@@ -11,8 +11,7 @@ iOS插件提供商户iOS app集成后，以便接入支付功能。
 ### 准备事项
 - iOS插件集成时，请将插件包中的.a、.h及bundle资源文件复制到主项目中。
 - 主项目需引入libicucore.dylib、Foundation.framework、UIKit.framework、CoreData.framework、libsqlite3.tdb，否则会出现编译错误
-- 在主项目设置项，修改：  
-  - TARGETS -> Build Settings -> Architectures - > Bulid Active Architecture Only 的值为```No```  
+- 在主项目设置项，修改： 
   - TARGETS -> Build Settings -> Other Linker Flags 添加```-all_load```或```-ObjC```
 
 ### 接口与回调

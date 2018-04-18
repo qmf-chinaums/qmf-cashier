@@ -29,7 +29,44 @@
         <td>签名信息，采用加密机对params进行签名后，得到的签名信息。<br>商户先用<a href="../../documents/attachment/ums_publickey.txt">生产公钥</a>验签通过后，再params内容解密。</td>
     </tr>
   </table>  
-  
+  - params相关字段说明
+
+  ``` json
+  {
+    orderId : 642015012726955805,
+    merchantMsgProcessId : 000000000000000,
+    merchantMsgProcessTime : 2015-02-02 13:00:00,
+    merchantRecMsgProcessState : 1
+  }
+  ```
+
+  <table style="text-align:left;">
+    <tr>
+        <th>参数名</th>
+        <th>参数说明</th>
+        <th>是否必传</th>
+    </tr>
+    <tr>
+        <td>orderId</td>
+        <td>传入消息的orderId</td>
+        <td>Y</td>
+    </tr>
+    <tr>
+        <td>merchantMsgProcessId</td>
+        <td>商户接收消息后的信息处理ID</td>
+        <td>Y</td>
+    </tr>
+    <tr>
+        <td>merchantMsgProcessTime</td>
+        <td>商户消息处理时间(yyyy-MM-dd hh:mm:ss)</td>
+        <td>Y</td>
+    </tr>
+    <tr>
+        <td>merchantRecMsgProcessS tate</td>
+        <td>商户处理结果状态(0 失败， 1成功)</td>
+        <td>Y</td>
+    </tr>
+  </table> 
 
 * 测试数据样例     
   - 加密后的数据  testParams  
