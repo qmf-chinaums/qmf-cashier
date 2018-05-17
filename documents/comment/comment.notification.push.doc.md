@@ -1,7 +1,7 @@
 ## 支付消息实时推送使用说明
 当商户通过本插件进行支付，由于各种原因导致商户客户端或者商户系统无法实时获得支付信息数据。  
 针对这种情况，开发此接口来实时转发支付成功信息。  
-<h1></h1>
+<hr>
   
 
 * 接口说明  
@@ -14,59 +14,157 @@
   
 
 * 发送与接收方式
-  - 目前URL支持(HTTP/HTTPS)两种格式，以下参数会以POST方式发送到相应的URL中。
-  <table style="text-align:left;">
-    <tr>
-        <th>参数名</th>
-        <th>参数说明</th>
-    </tr>
-    <tr>
-        <td>params</td>
-        <td>向商户传送的支付信息的数据，该字段为<strong>json格式</strong>并经3DES加密后传给商户。<br>3DES秘钥信息目前由平台为每个不同商户自动生成，密钥会以邮件形式通知商户。</td>
-    </tr>
-    <tr>
-        <td>signature</td>
-        <td>签名信息，采用加密机对params进行签名后，得到的签名信息。<br>商户先用<a href="../../documents/attachment/ums_publickey.txt">生产公钥</a>验签通过后，再params内容解密。</td>
-    </tr>
-  </table>  
+  - 手机平台发送
+    <table style="text-align:left;">
+      <tr>
+          <th>参数名</th>
+          <th>参数说明</th>
+      </tr>
+      <tr>
+          <td>params</td>
+          <td>向商户传送的支付信息的数据，该字段  为<strong>json格式</strong>并经  3DES加密后传给商户。<br>3DES秘钥信息  目前由平台为每个不同商户自动生成，密钥  会以邮件形式通知商户。</td>
+      </tr>
+      <tr>
+          <td>signature</td>
+          <td>签名信息，采用加密机对params进行  签名后，得到的签名信息。<br>商户先用  <a   href="../../documents/attachment/  ums_publickey.txt">生产公钥</a>验签  通过后，再params内容解密。</td>
+      </tr>
+    </table>  
   - params相关字段说明
 
-  ``` json
-  {
-    orderId : 642015012726955805,
-    merchantMsgProcessId : 000000000000000,
-    merchantMsgProcessTime : 2015-02-02 13:00:00,
-    merchantRecMsgProcessState : 1
-  }
-  ```
+    ``` json
+    {
+      "account": "621444******0038",
+      "amount": "1",
+      "batchNo": "000001",
+      "currencyCode": "156",
+      "dealDate": "2015-02-03",
+      "dealStatus": "1",
+      "dealTime": "10:08:51",
+      "deviceId": "00011003130000579141",
+      "liqDate": "0202",
+      "merchantId": "898000156911002", 
+      "merchantName": "绫致服装*****", 
+      "merchantOrderId": "000000000000001",
+      "orderId": "642015020326960682", 
+      "posSeqId": "468576",
+      "refId": "000105063751",
+      "subInst": "101600",
+      "termId": "00019130"
+    }
+    ```
 
-  <table style="text-align:left;">
-    <tr>
-        <th>参数名</th>
-        <th>参数说明</th>
-        <th>是否必传</th>
-    </tr>
-    <tr>
-        <td>orderId</td>
-        <td>传入消息的orderId</td>
-        <td>Y</td>
-    </tr>
-    <tr>
-        <td>merchantMsgProcessId</td>
-        <td>商户接收消息后的信息处理ID</td>
-        <td>Y</td>
-    </tr>
-    <tr>
-        <td>merchantMsgProcessTime</td>
-        <td>商户消息处理时间(yyyy-MM-dd hh:mm:ss)</td>
-        <td>Y</td>
-    </tr>
-    <tr>
-        <td>merchantRecMsgProcessS tate</td>
-        <td>商户处理结果状态(0 失败， 1成功)</td>
-        <td>Y</td>
-    </tr>
-  </table> 
+    <table style="text-align:left;">
+      <tr>
+          <th>参数名</th>
+          <th>参数说明</th>
+      </tr>
+      <tr>
+          <td>account</td>
+          <td>银行卡号(前六后四，中间部分用*标  识)</td>
+      </tr>
+      <tr>
+          <td>amount</td>
+          <td>交易金额(单位:分)</td>
+      </tr>
+      <tr>
+          <td>posSeqId</td>
+          <td>POS流水号</td>
+      </tr>
+      <tr>
+          <td>batchNo</td>
+          <td>批次号</td>
+      </tr>
+      <tr>
+          <td>currencyCode</td>
+          <td>交易币种</td>
+      </tr>
+      <tr>
+          <td>merchantId</td>
+          <td>商户代码</td>
+      </tr>
+      <tr>
+          <td>merchantName</td>
+          <td>商户名称</td>
+      </tr>
+      <tr>
+          <td>dealDate</td>
+          <td>受卡方所在日期(yyyy-MM-dd)</td>
+      </tr>
+      <tr>
+          <td>dealTime</td>
+          <td>受卡方所在时间(hh:mm:ss)</td>
+      </tr>
+      <tr>
+          <td>refId</td>
+          <td>参考号</td>
+      </tr>
+      <tr>
+          <td>termId</td>
+          <td>终端号</td>
+      </tr>
+      <tr>
+          <td>dealStatus</td>
+          <td>交易状态(1:支付成功、2:支付失败、  3:支 付中、4:已撤销、5:撤销中、6:已退  货、 7:退货中、8退货失败)</td>
+      </tr>
+      <tr>
+          <td>orderId</td>
+          <td>订单号</td>
+      </tr>
+      <tr>
+          <td>merchantOrderId</td>
+          <td>商户订单号</td>
+      </tr>
+      <tr>
+          <td>subInst</td>
+          <td>分支机构</td>
+      </tr>
+      <tr>
+          <td>liqDate</td>
+          <td>清算日期(MMdd)</td>
+      </tr>
+      <tr>
+          <td>deviceId</td>
+          <td>设备号</td>
+      </tr>
+    </table>   
+  - 商户返回参数params相关字段说明
+
+    ``` json
+    {
+      "orderId" : "642015012726955805",
+      "merchantMsgProcessId" :   "000000000000000",
+      "merchantMsgProcessTime" :   "2015-02-02 13:00:00",
+      "merchantRecMsgProcessState" : "1"
+    }
+    ```
+
+    <table style="text-align:left;">
+      <tr>
+          <th>参数名</th>
+          <th>参数说明</th>
+          <th>是否必传</th>
+      </tr>
+      <tr>
+          <td>orderId</td>
+          <td>传入消息的orderId</td>
+          <td>Y</td>
+      </tr>
+      <tr>
+          <td>merchantMsgProcessId</td>
+          <td>商户接收消息后的信息处理ID</td>
+          <td>Y</td>
+      </tr>
+      <tr>
+          <td>merchantMsgProcessTime</td>
+          <td>商户消息处理时间(yyyy-MM-dd   hh:mm:ss)</td>
+          <td>Y</td>
+      </tr>
+      <tr>
+          <td>merchantRecMsgProcessS   tate</td>
+          <td>商户处理结果状态(0 失败， 1成功)  </td>
+          <td>Y</td>
+      </tr>
+    </table> 
 
 * 测试数据样例     
   - 加密后的数据  testParams  
