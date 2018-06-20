@@ -13,6 +13,7 @@ iOS插件提供商户iOS app集成后，以便接入支付功能。
 - 主项目需引入libicucore.dylib、Foundation.framework、UIKit.framework、CoreData.framework、libsqlite3.tdb，否则会出现编译错误
 - 在主项目设置项，修改： 
   - TARGETS -> Build Settings -> Other Linker Flags 添加```-all_load```或```-ObjC```
+  - TARGETS -> Build Settings -> Enable BitCode 设置为```NO```
 
 ### 接口与回调
 每个具体功能的接口方法与回调方法请参考头文件 [UMSCashierPlugin.h](../code/ios/useful/UMSCashierPlugin.h)
