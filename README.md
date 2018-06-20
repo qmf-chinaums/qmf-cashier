@@ -61,6 +61,3 @@
      - [版本信息查询接口](../master/documents/api/api.84.trade.get.version.md)
    - 后台服务接口
      - [后台支付通知接口](../master/documents/comment/comment.notification.push.doc.md)
-
-
- ### [更新日志](../master/updateLog.md)
