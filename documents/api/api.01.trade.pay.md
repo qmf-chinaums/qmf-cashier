@@ -21,10 +21,6 @@
         <td>微信、支付宝、银联钱包等钱包类支付</td>
         <td>"POSMPAY"</td>
     </tr>
-    <tr>
-        <td>收银台插件生成二维码供用户用微信、支付宝、银联钱包等钱包扫描支付</td>
-        <td>"CSCANB"</td>
-    </tr>
 </table>  
  
 > 当返回main_code=“MC_110001”时，表示业务正常处理完毕。此时data字段下含有业务数据信息。  
@@ -240,10 +236,9 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>payType</td>
         <td>○</td>
-        <td>BANKCARD、PREPAIDCARD、POSMPAY、CSCANB</td>
+        <td>BANKCARD、PREPAIDCARD、POSMPAY</td>
         <td>"BANKCARD"</td>
-        <td>◆BANKCARD：银行卡、云闪付消费<br>◆PREPAIDCARD：预付卡消费<br>◆POSMPAY：POS通扫码消费（商户扫个人）
-        <br>◆CSCANB：生成二维码（个人扫商户）</td>
+        <td>◆BANKCARD：银行卡、云闪付消费<br>◆PREPAIDCARD：预付卡消费<br>◆POSMPAY：POS通扫码消费（商户扫个人）</td>
     </tr>
     <tr>
         <th rowspan="2">12</th>
@@ -696,13 +691,6 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>phoneNumber</td>
         <td>消费者手机号</td>
         <td>若有，则是带星号的手机号</td>
-    </tr>
-    <tr>
-        <th rowspan="1">37</th>
-        <td>-</td>
-        <td>transactionCode</td>
-        <td>交易参考号</td>
-        <td>仅c扫b交易有</td>
     </tr>
     <tr>
         <th rowspan="1">37</th>
