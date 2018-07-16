@@ -508,3 +508,6 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
     </tr>
 </table>
+
+### 注： 
+当插件返回交易中或未知的情况，可以通过订单查询接口进行查询，仅限当日订单。
