@@ -29,8 +29,8 @@
   
 
 ### 商户联调联系方式    
-  - **email： qmf_cashier@chinaums.com**  
-  - **电话： 021-60133552**  
+  - **email： mhzhu@chinaums.com**  
+  - **电话： 021-60473089**  
 
 
 ### 支付插件的形式  
