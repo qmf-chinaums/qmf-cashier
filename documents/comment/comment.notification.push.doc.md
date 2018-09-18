@@ -13,7 +13,7 @@
   - 商户需要**自行**实现URL通知功能的服务，并在接收消息时需要对接收到的参数进行验签和解密操作。
   - 验签算法为RSA。<a href="../../documents/attachment/ums_publickey.txt">点击下载RSA签名生产公钥</a>  
   - 加解密算法为3DES
-  - 3DES解密及验签公钥见下图
+  - 3DES解密及验签公钥（X509）见下图：
     <img src="https://github.com/qmf-chinaums/qmf-cashier/blob/master/documents/attachment/notify_key.png" />
 
 * 发送与接收方式
