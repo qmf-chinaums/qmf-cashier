@@ -29,15 +29,15 @@
   
 
 ### 商户联调联系方式    
-  - **email： qmf_cashier@chinaums.com**  
-  - **电话： 021-60133552**  
+  - **email： mhzhu@chinaums.com**  
+  - **电话： 021-60473089**  
 
 
 ### 支付插件的形式  
   - iOS SDK      -  商户可集成至自有app。[集成方法请点击进入查看](../master/documents/ios.sdk.doc.md)  
   - android SDK  
-    -  apk形式：商户自由app与支付插件独立存在。[集成方法请点击进入查看](../master/documents/android.apk.doc.md)  
-    -  aar形式：商户可集成至自由app。[集成方法请点击进入查看](../master/documents/android.aar.doc.md)  
+    -  apk形式：商户自有app与支付插件独立存在。[集成方法请点击进入查看](../master/documents/android.apk.doc.md)  
+    -  aar形式：商户可集成至自有app。[集成方法请点击进入查看](../master/documents/android.aar.doc.md)  
   
 
 ### 主要功能

@@ -6,6 +6,8 @@
 
 * 商户自行生成私钥```PRIVATE_KEY```与公钥```PUBLIC_KEY```，然后将公钥```PUBLIC_KEY```告知**银联商务分公司**。    
 银商分公司工作人员必须在“手机运维管理平台--线下插件商户基本信息维护”中配置商户提供的PUBLIC_KEY，**未正确配置公钥将无法完成交易**  
+见下图：
+<img src="https://github.com/qmf-chinaums/qmf-cashier/blob/master/documents/attachment/sign_publickey.png" />
 RSA公私钥可以使用<a href="http://tools.izhong.me/#/key">公私钥生成工具</a>生成，请复制其中的```PKCS5格式私钥```作为私钥，```X509格式公钥```作为公钥。  
   
 
