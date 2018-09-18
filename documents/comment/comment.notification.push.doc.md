@@ -6,12 +6,15 @@
 
 * 接口说明  
   - 终端商户告知银商分公司实时推送通知**URL地址**，由银商分公司工作人员在“手机运维管理平台--线下插件商户基本信息维护”中添加。  
+    见下图：
+    <img src="https://github.com/qmf-chinaums/qmf-cashier/blob/master/documents/attachment/notify_url.png" height="994" />
   - 本功能会在支付成功时将消息推送到商户指定的回调URL地址，所有参数采用POST方式推送。  
-  - 后台会通过3DES对传送的支付信息进行**加密**，并对**加密后的内容**进行RSA签名。  
+  - 后台会通过3DES对传送的支付信息进行**加密**，并对**加密后的内容**进行RSA签名。3DES密钥会通过邮件方式给各个商户。  
   - 商户需要**自行**实现URL通知功能的服务，并在接收消息时需要对接收到的参数进行验签和解密操作。
   - 验签算法为RSA。<a href="../../documents/attachment/ums_publickey.txt">点击下载RSA签名生产公钥</a>  
   - 加解密算法为3DES
-  
+  - 3DES解密及验签公钥见下图
+    <img src="https://github.com/qmf-chinaums/qmf-cashier/blob/master/documents/attachment/notify_url.png" height="1004" />
 
 * 发送与接收方式
   - 手机平台发送
