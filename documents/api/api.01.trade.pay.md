@@ -1,5 +1,5 @@
 ## 消费接口
-商户可以调用消费(支付)接口进行支付。可以选择使用银行卡，预付卡，云闪付（ApplePay及各种手机pay），微信、支付宝、银联钱包等钱包类进行支付。  
+商户可以调用消费(支付)接口进行支付。可以选择使用银行卡，预付卡，云闪付（ApplePay及各种手机pay），微信、支付宝、银联钱包等钱包类进行支付。消费接口中实现了实名认证功能，商户若想在进行银行卡支付前先进行实名认证，只需在银商管理平台中将实名认证功能开启即可。  
 <table style="text-align:left;">
     <tr>
         <th>消费介质区分</th>
@@ -641,78 +641,85 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>受卡方所在地时间</td>
         <td>-</td>
     </tr>
-    <tr>
+     <tr>
         <th rowspan="1">29</th>
+        <td>-</td>
+        <td>elcvoucherPictureUrl</td>
+        <td>电子签购单图片下载地址</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <th rowspan="1">30</th>
         <td>-</td>
         <td>liqDate</td>
         <td>清算日期</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">30</th>
+        <th rowspan="1">31</th>
         <td>-</td>
         <td>serviceCode</td>
         <td>服务点条件码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">31</th>
+        <th rowspan="1">32</th>
         <td>-</td>
         <td>refId</td>
         <td>检索参考号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">32</th>
+        <th rowspan="1">33</th>
         <td>-</td>
         <td>merchantId</td>
         <td>受卡方标识码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">33</th>
+        <th rowspan="1">34</th>
         <td>-</td>
         <td>termId</td>
         <td>受卡机终端标识码</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">34</th>
+        <th rowspan="1">35</th>
         <td>-</td>
         <td>batchNo</td>
         <td>批次号</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">35</th>
+        <th rowspan="1">36</th>
         <td>-</td>
         <td>dealDate</td>
         <td>交易时间</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">36</th>
+        <th rowspan="1">37</th>
         <td>-</td>
         <td>phoneNumber</td>
         <td>消费者手机号</td>
         <td>若有，则是带星号的手机号</td>
     </tr>
     <tr>
-        <th rowspan="1">37</th>
+        <th rowspan="1">38</th>
         <td>-</td>
         <td>transactionCode</td>
         <td>交易参考号</td>
         <td>仅c扫b交易有</td>
     </tr>
     <tr>
-        <th rowspan="1">37</th>
+        <th rowspan="1">39</th>
         <td>extra</td>
         <td>-</td>
         <td>扩展返回参数的key</td>
         <td>-</td>
     </tr>
     <tr>
-        <th rowspan="1">38</th>
+        <th rowspan="1">40</th>
         <td>-</td>
         <td>paySerialNum</td>
         <td>仅POS通交易有</td>
