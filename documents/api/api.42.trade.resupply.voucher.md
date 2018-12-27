@@ -126,13 +126,25 @@ umsPayManager.umspay(context, bundle, callbackFunc);
     <tr>
         <td>-</td>
         <td>orderId</td>
-        <td>●</td>
+        <td>▲</td>
         <td>长度为18位</td>
         <td>-</td>
-        <td>-</td>
+        <td>orderId与merOrderId只需要传一个，若传入了orderId则优先使用orderId</td>
+    </tr>
+  <tr>
+        <th rowspan="2">06</th>
+        <th align="left" colspan="6">原交易的商户订单号</th>
     </tr>
     <tr>
-        <th rowspan="2">06</th>
+        <td>-</td>
+        <td>merOrderId</td>
+        <td>▲</td>
+        <td>长度>=11位且<=64位</td>
+        <td>-</td>
+        <td>orderId与merOrderId只需要传一个，若传入了orderId则优先使用orderId</td>
+    </tr>
+    <tr>
+        <th rowspan="2">07</th>
         <th align="left" colspan="6">是否展示电子签购单页面</th>
     </tr>
     <tr>
@@ -144,7 +156,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>是否展示电子签购单页面。<br>◆"true": 展示<br>◆"false"：不展示</td>
     </tr>
     <tr>
-        <th rowspan="2">07</th>
+        <th rowspan="2">08</th>
         <th align="left" colspan="6">签购单处理方式</th>
     </tr>
     <tr>
@@ -156,7 +168,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>签购单处理方式<br>◆"paperType"：自动打印纸质签购单<br>◆"electricType"：自动发送短信签购单（需求填写消费者手机号）<br>◆"defaultType"：默认方式，即需要手动选择签购单出来方式</td>
     </tr>
     <tr>
-        <th rowspan="2">08</th>
+        <th rowspan="2">09</th>
         <th align="left" colspan="6">扩展请求参数</th>
     </tr>
     <tr>
