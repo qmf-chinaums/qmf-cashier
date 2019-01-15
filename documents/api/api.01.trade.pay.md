@@ -611,7 +611,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>issBankName</td>
         <td>发卡行名称</td>
-        <td>-</td>
+        <td>B扫C显示为支付宝钱包或微信钱包</td>
     </tr>
     <tr>
         <th rowspan="1">25</th>
