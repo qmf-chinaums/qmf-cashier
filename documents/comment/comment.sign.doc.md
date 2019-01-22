@@ -1,6 +1,6 @@
 ## 签名字段（sign）说明
 签名计算采用RSA算法。  
-将请求参数(ums_request)中data下的所有字段，按照ASCII码升序排列后拼接，计算sign值。
+将请求参数(ums_request)中data下的所有非空字段，按照ASCII码升序排列后拼接，计算sign值。
 <h1></h1>
   
 
