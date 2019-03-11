@@ -590,7 +590,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>issNo</td>
         <td>发卡机构号</td>
-        <td>-</td>
+        <td>微信：0001<br>支付宝：0002<br>银联二维码：0003<br>其他扫码交易：FFFF</td>
     </tr>
     <tr>
         <th rowspan="1">22</th>
