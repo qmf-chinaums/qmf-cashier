@@ -590,7 +590,7 @@ umsPayManager.umspay(context, bundle, callbackFunc);
         <td>-</td>
         <td>issNo</td>
         <td>发卡机构号</td>
-        <td>微信：0001<br>支付宝：0002<br>银联二维码：0003<br>其他扫码交易：FFFF</td>
+        <td>B扫C交易该字段值的含义：<br>0001：微信<br>0002：支付宝<br>0003：银联二维码<br>FFFF：其他扫码交易</td>
     </tr>
     <tr>
         <th rowspan="1">22</th>
